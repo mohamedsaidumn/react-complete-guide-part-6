@@ -1,4 +1,5 @@
 import React from "react";
+import MyParagraph from "./MyParagraph";
 
 interface DemoOutputProps {
   show: boolean;
@@ -6,7 +7,7 @@ interface DemoOutputProps {
 
 const DemoOutput = (props: DemoOutputProps) => {
   console.log("DemoOutput RUNNING");
-  return <p>{props.show ? "This is new!" : ""}</p>;
+  return <MyParagraph>{props.show ? "This is new!" : ""}</MyParagraph>;
 };
 
 export default DemoOutput;
